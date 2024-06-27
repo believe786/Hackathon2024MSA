@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>
+      Analyze Stress Level
+    </title>
+    <style>
+    div {
+      height: 500px;
+      width: 60%;
+      background-color: powderblue;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <canvas id="myChart" style="display:inline-block; margin:auto; max-width:"100" max-height:"100"" ></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      const ctx = document.getElementById('myChart');
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Happy', 'Neutral', 'Sad', 'Stress/Anxious', 'Angry', 'Fear'],
+          datasets: [{
+            label: 'Facial Emotion Recognition',
+            data: [12, 19, 3, 5, 2, 4],
+            borderWidth: 2
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -4,6 +4,10 @@
     <title>Mental Stress Ananlysis</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
+      * {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+      }
       body {
         background-color: #7CB9E8;
         /* opacity: 0.8; */
@@ -68,8 +72,8 @@
               labels: labels,
               datasets: [{
                   label: 'Stress Level',
-                  backgroundColor: 'rgb(255, 99, 132)',
-                  borderColor: 'rgb(255, 99, 132)',
+                  backgroundColor: '#13274F',
+                  borderColor: '#13274F',
                   data: {{ data | tojson}},
               }]
           };

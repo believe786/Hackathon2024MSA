@@ -9,6 +9,8 @@ packages = [{include = "repl_nix_hackathon2024msa_1"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^3.0.3"
+plotly = "^5.22.0"
+pandas = "^2.2.2"
 
 
 [build-system]
