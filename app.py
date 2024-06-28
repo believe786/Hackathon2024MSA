@@ -49,6 +49,12 @@ def analysisOfStressLevel():
     template_name_or_list='analysisChart.html'
     )
 
+@app.route("/solutions")
+def stressManagementSolution():
+  
+  return render_template(
+    template_name_or_list='stressManagementTechniques.html'
+    )
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug=True)
